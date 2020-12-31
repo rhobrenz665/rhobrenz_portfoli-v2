@@ -1,0 +1,132 @@
+.featured {
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: 40% auto;
+
+  position: relative;
+  padding: 5rem 20rem 3rem 20rem;
+  text-align: left;
+  line-height: 2;
+
+  @media screen and (max-width: $bp-large) {
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 10rem;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 1.7rem;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  &__inner {
+    padding: 5rem 1rem;
+
+    @media screen and (max-width: $bp-small) {
+      padding: 2rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .featured-title {
+      color: black;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: -0.4rem;
+      display: block;
+    }
+
+    .featured-subtitle {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: var(--color-primary);
+      letter-spacing: 0.8rem;
+      font-size: 1.3rem;
+    }
+
+    .featured-desc {
+      color: #252525;
+      font-size: 1.3rem;
+      font-weight: 500;
+      word-wrap: break-word;
+      margin-bottom: 1.1rem;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+
+    @media screen and (max-width: $bp-medium) {
+      place-content: center;
+    }
+
+    a {
+      display: flex;
+      place-content: center;
+
+      padding: 1rem;
+      margin-bottom: 3rem;
+      margin-right: 1rem;
+      position: relative;
+
+      box-shadow: var(--shadow-light);
+      border-radius: 15px;
+      background-color: #cdcdcd4f;
+      color: var(--color-secondary);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--color-primary);
+        svg {
+          fill: var(--color-primary);
+        }
+      }
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: var(--color-secondary);
+      margin-right: 1rem;
+    }
+  }
+
+  &__left {
+    display: grid;
+    place-content: center;
+  }
+
+  &__right {
+    img {
+      border-radius: 1rem;
+      max-width: 900px;
+
+      @media screen and (max-width: $bp-large) {
+        max-width: 370px;
+      }
+
+      @media screen and (max-width: $bp-small) {
+        display: inline-block;
+        text-align: center;
+        max-width: 330px;
+        margin-top: -5rem;
+      }
+    }
+  }
+}
+
+.featured::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 20%, lighten(#ff3366, 33%));
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

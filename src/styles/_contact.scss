@@ -1,0 +1,157 @@
+.contact {
+  grid-column: center-start / center-end;
+
+  margin: 2rem 0;
+  margin-bottom: 10rem;
+  @media only screen and (max-width: $bp-small) {
+    margin: 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    width: 100%;
+    max-width: 82rem;
+    margin: 0 auto;
+
+    background-color: #fff;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem 1px rgba(0, 0, 0, 0.1);
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  &__details {
+    padding: 1rem;
+    width: 100%;
+    h2 {
+      color: $color-black-2;
+    }
+
+    h3 {
+      color: $color-black-2;
+    }
+
+    svg {
+      height: 3rem;
+      width: 3rem;
+      fill: lighten($color-primary-light, 5%);
+    }
+  }
+
+  &__form {
+    background-color: $color-primary-light;
+    background-color: lighten($color-primary-light, 5%);
+
+    position: relative;
+    padding: 2rem;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: #fff;
+      font-family: inherit;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .circle {
+      border-radius: 50%;
+      background: linear-gradient(135deg, transparent 20%, $color-primary);
+      position: absolute;
+
+      &.one {
+        width: 13rem;
+        height: 13rem;
+        top: 13rem;
+        right: -4rem;
+
+        @media only screen and (max-width: $bp-medium) {
+          right: 1rem;
+        }
+      }
+
+      &.two {
+        width: 8rem;
+        height: 8rem;
+        top: 1rem;
+        right: 3rem;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      transform: rotate(45deg);
+      top: 5rem;
+      left: -1.3rem;
+      background-color: $color-primary-light;
+      background-color: lighten($color-primary-light, 5%);
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    textarea {
+      padding: 0.8rem 1.2rem;
+      min-height: 200px;
+      border-radius: 22px;
+      overflow-y: auto;
+      resize: none;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.8rem 0.4rem;
+    border-radius: 0.5rem;
+    border: 2px solid #fff;
+    outline: none;
+    margin-bottom: 1.5rem;
+  }
+
+  &__button {
+    padding: 1.5rem 4rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-primary-light;
+    line-height: 1;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--color-grey-light-2);
+      color: var(--color-primary-dark);
+      font-weight: 500;
+      box-shadow: var(--shadow-dark);
+    }
+  }
+}
