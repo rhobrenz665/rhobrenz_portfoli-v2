@@ -154,6 +154,7 @@ img {
 }
 .section:not(.header .work) {
   margin: 7rem 5rem;
+  padding: 1rem;
 
   @media only screen and (max-width: $bp-largest) {
     margin: 5rem;

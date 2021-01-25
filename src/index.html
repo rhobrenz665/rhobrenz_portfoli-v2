@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rhobrenz Portfolio Website" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
     <title>Rhobrenz Portfolio</title>
 </head>
 
@@ -100,12 +104,12 @@
                 <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77">
                     <g id="scroll" transform="translate(-253 -787)">
                         <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none"
-                            stroke="#8492a6" stroke-width="4">
+                            stroke="#d3d8df" stroke-width="4">
                             <rect width="40" height="77" rx="20" stroke="none" />
                             <rect x="2" y="2" width="36" height="73" rx="18" fill="none" />
                         </g>
                         <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11"
-                            transform="translate(262 798)" fill="#8492a6" />
+                            transform="translate(262 798)" fill="#d3d8df" />
                     </g>
                 </svg>
             </div>
@@ -120,13 +124,13 @@
                     <p class="featured-desc">Create a developer profile/portfolio, share posts and get help from other
                         developers.</p>
                     <div class="featured__icons">
-                        <a href="https://www.facebook.com/rhobrenz" target="_blank">
+                        <a href="https://devlink-70627.web.app/" target="_blank">
                             <svg>
                                 <use href="./image/sprite.svg#icon-eye"></use>
                             </svg>
                             Live Project
                         </a>
-                        <a href="https://www.facebook.com/rhobrenz" target="_blank">
+                        <a href="https://github.com/rhobrenz665/linkDev" target="_blank">
                             <svg>
                                 <use href="./image/sprite.svg#icon-github"></use>
                             </svg>
@@ -151,6 +155,29 @@
 
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
+
+                            <li class="glide__slide">
+                                <img src="image/places.png" class="work__image" />
+                                <div class="btn__container">
+                                    <div class="work__btn">
+                                        <a href="https://placeshubrhob.web.app/" target="_blank">
+                                            <svg>
+                                                <use href="./image/sprite.svg#icon-eye"></use>
+                                            </svg>
+                                            <span>Live Project</span>
+                                        </a>
+                                    </div>
+                                    <div class="work__btn">
+                                        <a href="https://github.com/rhobrenz665/PlacesHub" target="_blank">
+                                            <svg>
+                                                <use href="./image/sprite.svg#icon-github"></use>
+                                            </svg>
+                                            <span> Github</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
                             <li class="glide__slide">
                                 <img class="work__image" src="image/kontakt.png" />
                                 <div class="btn__container">
@@ -172,13 +199,12 @@
                                     </div>
                                 </div>
                             </li>
+
                             <li class="glide__slide">
-                                <a href="#" class="work__image">
-                                    <img src="image/places.png" />
-                                </a>
+                                <img src="image/dev.png" class="work__image" />
                                 <div class="btn__container">
                                     <div class="work__btn">
-                                        <a href="https://www.facebook.com/rhobrenz" target="_blank">
+                                        <a href="https://devlink-70627.web.app/" target="_blank">
                                             <svg>
                                                 <use href="./image/sprite.svg#icon-eye"></use>
                                             </svg>
@@ -186,30 +212,7 @@
                                         </a>
                                     </div>
                                     <div class="work__btn">
-                                        <a href="https://www.facebook.com/rhobrenz" target="_blank">
-                                            <svg>
-                                                <use href="./image/sprite.svg#icon-github"></use>
-                                            </svg>
-                                            <span> Github</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <a href="#" class="work__image">
-                                    <img src="image/rhob-port.png" />
-                                </a>
-                                <div class="btn__container">
-                                    <div class="work__btn">
-                                        <a href="https://www.facebook.com/rhobrenz" target="_blank">
-                                            <svg>
-                                                <use href="./image/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                            <span>Live Project</span>
-                                        </a>
-                                    </div>
-                                    <div class="work__btn">
-                                        <a href="https://www.facebook.com/rhobrenz" target="_blank">
+                                        <a href="https://github.com/rhobrenz665/linkDev" target="_blank">
                                             <svg>
                                                 <use href="./image/sprite.svg#icon-github"></use>
                                             </svg>
@@ -354,11 +357,11 @@
                     <span class="circle one"></span>
                     <span class="circle two"></span>
                     <h1>Message me</h1>
-                    <form action="https://formspree.io/f/xleoovbj" method="POST" autocomplete="off">
+                    <form action="https://formspree.io/f/xpzobogg" method="POST">
                         <input type="text" name="name" placeholder="Name" class="contact__input">
-                        <input type="mail" name="_replyto" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button">
+                        <input type="text" name="_replyto" placeholder="Email" class="contact__input">
+                        <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Send" class="contact__button">
                     </form>
                 </div>
             </div>

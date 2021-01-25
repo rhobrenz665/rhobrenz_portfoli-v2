@@ -34,11 +34,11 @@ new TypeIt('#type2', {
   waitUntilVisible: true,
 })
   .type('Designer', { delay: 400 })
-  .pause(500)
+  .pause(100)
   .delete(9)
   .type('Developer', { delay: 400 })
-  .pause(500)
-  .delete(9)
+  .pause(700)
+  .delete(20)
   .go();
 
 const scrollReveal = ScrollReveal({
@@ -50,25 +50,24 @@ const scrollReveal = ScrollReveal({
 
 // Scroll Reveal Header
 scrollReveal.reveal('.banner__content', {});
-scrollReveal.reveal('.btn', { delay: 200 });
-scrollReveal.reveal('.banner__image', { delay: 400 });
-scrollReveal.reveal('.scroll_icon', { delay: 600 });
+scrollReveal.reveal('.btn', { delay: 80 });
+scrollReveal.reveal('.banner__image', { delay: 100 });
 
 // Scroll Reveal About
 scrollReveal.reveal('.about__left', {});
-scrollReveal.reveal('.about__right', { delay: 300 });
+scrollReveal.reveal('.about__right', { delay: 80 });
 
 // Scroll Reveal Skills
-scrollReveal.reveal('.skills__left', { delay: 300 });
+scrollReveal.reveal('.skills__left', { delay: 80 });
 scrollReveal.reveal('.skills__right', {});
 
 // Scroll Reveal Projects
-scrollReveal.reveal('.work__box', { delay: 300 });
+scrollReveal.reveal('.work__box', { delay: 100 });
 
 // Scroll Reveal Contact
 scrollReveal.reveal('.contact__container', {});
-scrollReveal.reveal('.contact__info', { delay: 100 });
-scrollReveal.reveal('.contact__form', { delay: 300 });
+scrollReveal.reveal('.contact__info', { delay: 80 });
+scrollReveal.reveal('.contact__form', { delay: 100 });
 
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('.navigation');
