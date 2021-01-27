@@ -152,7 +152,7 @@ img {
     margin-bottom: 3.5rem;
   }
 }
-.section:not(.header .work) {
+.section:not(.header, .work) {
   margin: 7rem 5rem;
   padding: 1rem;
 
