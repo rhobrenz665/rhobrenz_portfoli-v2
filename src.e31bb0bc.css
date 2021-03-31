@@ -14,6 +14,7 @@
   --color-black-2: #3c4858;
   --background-color: #eaedf2;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 2rem 6rem rgba(0, 0, 0, 0.15);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --line: 1px solid var(--color-grey-light-2);
 }
@@ -676,6 +677,9 @@ img {
 .skills .skills__left .skills__box .react {
   width: 78%;
 }
+.skills .skills__left .skills__box .typescript {
+  width: 70%;
+}
 .skills .skills__right {
   border-radius: 1rem;
   box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.1);
@@ -868,7 +872,7 @@ img {
   }
 }
 .work__image {
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 .work .btn__container {
   display: flex;
@@ -1117,6 +1121,7 @@ img {
 .featured__right img {
   border-radius: 1rem;
   max-width: 900px;
+  box-shadow: var(--shadow-medium);
 }
 @media screen and (max-width: 62.5em) {
   .featured__right img {
