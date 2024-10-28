@@ -1,3 +1,6 @@
+@use 'base' as *;
+@use 'sass:color';
+
 .featured {
   grid-column: full-start / full-end;
 
@@ -126,7 +129,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, lighten(#ff3366, 33%));
+  background: linear-gradient(135deg, transparent 20%, color.scale(#ff3366, $lightness: 33%));
   top: 0;
   left: 0;
   z-index: -1;

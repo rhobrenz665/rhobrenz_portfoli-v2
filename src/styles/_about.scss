@@ -1,3 +1,6 @@
+@use 'base' as *;
+@use 'sass:color';
+
 .about {
   grid-column: center-start / center-end;
 
@@ -37,9 +40,8 @@
           border-bottom: 1px solid $color-primary;
         }
       }
-
       .info {
-        color: darken(#8492a6, 10%);
+        color: color.change(#8492a6, $lightness: -10%);
         font-size: 1.7rem;
         line-height: 1.7;
         margin-bottom: 2.5rem;

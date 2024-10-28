@@ -1,3 +1,6 @@
+@use 'base' as *;
+@use 'sass:color';
+
 .contact {
   grid-column: center-start / center-end;
 
@@ -51,13 +54,13 @@
     svg {
       height: 3rem;
       width: 3rem;
-      fill: lighten($color-primary-light, 5%);
+      fill: color.adjust($color-primary-light, $lightness: +5%);
     }
   }
 
   &__form {
     background-color: $color-primary-light;
-    background-color: lighten($color-primary-light, 5%);
+    background-color: color.adjust($color-primary-light, $lightness: +5%);
 
     position: relative;
     padding: 2rem;
@@ -106,7 +109,7 @@
       top: 5rem;
       left: -1.3rem;
       background-color: $color-primary-light;
-      background-color: lighten($color-primary-light, 5%);
+      background-color: color.adjust($color-primary-light, $lightness: +5%);
 
       @media only screen and (max-width: $bp-medium) {
         display: none;

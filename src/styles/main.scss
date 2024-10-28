@@ -1,12 +1,12 @@
-@import 'base';
-@import 'header';
-@import 'about';
-@import 'skills';
-@import 'contact';
-@import 'work';
-@import 'footer';
-@import 'typography';
-@import 'featured';
+@use 'base' as *;      // Allows direct access to base variables and mixins
+@use 'header' as *;    // Allows direct access to header variables and mixins
+@use 'about' as *;     // Allows direct access to about variables and mixins
+@use 'skills' as *;    // Allows direct access to skills variables and mixins
+@use 'contact' as *;   // Allows direct access to contact variables and mixins
+@use 'work' as *;      // Allows direct access to work variables and mixins
+@use 'footer' as *;    // Allows direct access to footer variables and mixins
+@use 'typography' as *; // Allows direct access to typography variables and mixins
+@use 'featured' as *;  // Allows direct access to featured variables and mixins
 
-@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
-@import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+@use 'node_modules/@glidejs/glide/src/assets/sass/glide.core' as glide; 
+@use 'node_modules/@glidejs/glide/src/assets/sass/glide.theme' as glideTheme; 

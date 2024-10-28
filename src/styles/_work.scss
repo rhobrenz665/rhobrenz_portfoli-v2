@@ -1,3 +1,5 @@
+@use 'base' as *;
+
 .work {
   grid-column: full-start / full-end;
   background-color: var(--background-color);
