@@ -122,3 +122,5 @@ function menuOnClick() {
     navContainer.style.height = '0px';
   }
 }
+
+document.getElementById("current-year").textContent = new Date().getFullYear();
